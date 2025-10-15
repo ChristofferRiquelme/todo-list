@@ -3,6 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: hsl(0, 2%, 12%);
+}
+
+h1 {
+    font-family: 'Rubik Puddles', cursive;
 }
 
 form {
@@ -24,6 +33,7 @@ input {
     border: 2px solid #ccc;
     border-radius: 10px;
     width: 300px;
+    color: black;
 }
 
 .container {

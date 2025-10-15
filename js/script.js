@@ -1,6 +1,7 @@
 const taskInput = document.querySelector('#taskInput');
 const addTaskButton = document.querySelector('#addTaskButton');
 const taskList = document.querySelector('#taskList');
+const clearCompletedButton = document.querySelector('#clearCompletedButton');
 
 addTaskButton.addEventListener('click', function(event) {
     event.preventDefault();
@@ -25,6 +26,11 @@ const completedTask = (event) => {
 };
 
 taskList.addEventListener('click', completedTask);
+
+clearCompletedButton.addEventListener('click', () => {
+    taskList.querySelectorAll('.completed').forEach(li => li.remove());
+    saveTasks();
+});
 
 const saveTasks = () => {
     const tasks = [];
