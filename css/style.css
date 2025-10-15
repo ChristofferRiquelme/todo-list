@@ -5,6 +5,10 @@
     font-family: Arial, sans-serif;
 }
 
+form {
+    margin: 50px 0;
+}
+
 button {
     padding: 10px 20px;
     background-color: #28a745;
@@ -30,13 +34,22 @@ input {
     justify-content: center;
     height: 100vh;
     margin: 0 auto;
-    gap: 20px;
 }
 
 .taskList {
     width: 60%;
+    margin-bottom: 40px;
 
     li {
         padding: 10px;
     }
+}
+
+.clearCompletedButton {
+    background-color: hsl(220, 62%, 57%);
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
 }

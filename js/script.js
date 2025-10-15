@@ -13,3 +13,11 @@ addTaskButton.addEventListener('click', function(event) {
         taskInput.value = '';
     }
 });
+
+const completedTask = (event) => {
+    if (event.target.tagName === 'LI') {
+        event.target.classList.toggle('completed');
+    }
+};
+
+taskList.addEventListener('click', completedTask);
